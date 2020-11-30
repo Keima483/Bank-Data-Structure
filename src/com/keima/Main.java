@@ -6,6 +6,7 @@ public class Main {
 
     public static Scanner sc = new Scanner(System.in);
     public static Bank newBank = new Bank("SBI");
+
     public static void main(String[] args) {
 
         printOptions();
@@ -181,9 +182,9 @@ public class Main {
                 }
             } else {
 
+                System.out.println("The customer of this branch are: ");
                 for(int i = 0 ; i < newBank.getBankBranch().get(position).getCustomerData().size() ; i ++ ) {
 
-                    System.out.println("The customer of this branch are: ");
                     System.out.println("\n" + newBank.getBankBranch().get(position).getCustomerData().get(i).getCustomerName() + "'s transaction details are as follows: ");
                 }
             }
