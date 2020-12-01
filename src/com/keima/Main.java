@@ -169,9 +169,9 @@ public class Main {
 
             System.out.print("press 1 if you want transaction list along with the names list of customers other wise enter 0 : ");
             int choice = sc.nextInt() ;
+            System.out.println("The customer of this branch are: ");
             if(choice == 1) {
 
-                System.out.println("The customer of this branch are: ");
                 for(int i = 0 ; i < newBank.getBankBranch().get(position).getCustomerData().size() ; i ++ ) {
 
                     System.out.println("\n" + newBank.getBankBranch().get(position).getCustomerData().get(i).getCustomerName() + "'s transaction details are as follows: ");
@@ -182,7 +182,6 @@ public class Main {
                 }
             } else {
 
-                System.out.println("The customer of this branch are: ");
                 for(int i = 0 ; i < newBank.getBankBranch().get(position).getCustomerData().size() ; i ++ ) {
 
                     System.out.println("\n" + newBank.getBankBranch().get(position).getCustomerData().get(i).getCustomerName() + "'s transaction details are as follows: ");
